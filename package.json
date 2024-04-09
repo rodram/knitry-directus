@@ -6,12 +6,12 @@
 	"private": true,
 	"homepage": "https://directus.io",
 	"scripts": {
-		"build": "pnpm --recursive --filter '!docs' run build",
+		"build": "yarn --recursive --filter '!docs' run build",
 		"format": "prettier --cache --check .",
 		"lint": "eslint --cache .",
 		"test": "pnpm --recursive --filter '!tests-blackbox' test",
 		"test:blackbox": "pnpm --filter directus deploy --prod dist && pnpm --filter tests-blackbox test",
-		"heroku-prebuild": "npm install -g npm@latest"
+		"heroku-prebuild": "yarn install -g yarn@latest"
 	},
 	"devDependencies": {
 		"@changesets/cli": "2.27.1",
