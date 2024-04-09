@@ -10,7 +10,8 @@
 		"format": "prettier --cache --check .",
 		"lint": "eslint --cache .",
 		"test": "pnpm --recursive --filter '!tests-blackbox' test",
-		"test:blackbox": "pnpm --filter directus deploy --prod dist && pnpm --filter tests-blackbox test"
+		"test:blackbox": "pnpm --filter directus deploy --prod dist && pnpm --filter tests-blackbox test",
+		"heroku-prebuild": "npm install -g npm@latest"
 	},
 	"devDependencies": {
 		"@changesets/cli": "2.27.1",
