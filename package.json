@@ -11,7 +11,7 @@
 		"lint": "eslint --cache .",
 		"test": "pnpm --recursive --filter '!tests-blackbox' test",
 		"test:blackbox": "pnpm --filter directus deploy --prod dist && pnpm --filter tests-blackbox test",
-		"heroku-prebuild": "yarn install -g yarn@latest"
+		"heroku-prebuild": "yarn global add yarn@latest"
 	},
 	"devDependencies": {
 		"@changesets/cli": "2.27.1",
